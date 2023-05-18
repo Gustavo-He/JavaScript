@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var Pessoa = {
+            Nome: "Adalberto",
+            Idade: "54",
+            Profissão: "Marceneiro",
+            endereço : {
+                Estado : "Bahia",
+                Cidade : "Salvador",
+                Rua : "Avenida Afrânio Peixoto."
+            },
+            apresentando () {
+                return  "Olá, meu nome é "+ this.Pessoas.Nome +", eu tenho "+ this.Pessoa.Idade + " anos e sou um "+ this.Pessoas.Profissão +"."
+            },
+            endereco () {
+                return "Moro na rua "+ this.endereço.Rua +" , na cidade "+ this.endereço.Cidade +" - "+ this.endereço.Estado +"."
+            },
+            deletar () {
+                delete this.Profissão
+            }
+        }
+    </script>
+
+</body>
+</html>
